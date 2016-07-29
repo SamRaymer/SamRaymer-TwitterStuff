@@ -1,6 +1,12 @@
-
 # application name
 appname: "SamRaymer::TwitterStuff"
+
+### IMPORTANT
+# Retrieve these keys from https://apps.twitter.com/ and store in the service's environment variables:
+# TWITTER_CONSUMER_KEY
+# TWITTER_CONSUMER_SECRET
+# TWITTER_TOKEN
+# TWITTER_TOKEN_SECRET
 
 # number of tweets to return with GET /statuses/recent/:id
 recent_tweet_count: 30
@@ -8,23 +14,14 @@ recent_tweet_count: 30
 #per the twitter API
 max_user_id_count: 5000
 
-twitter_consumer_key: "lmhaYtFemhQ1vFXqBraNX2ftQ"
-twitter_consumer_secret: "y1atUKzBk84n9MI9SSlZvqi2ltwVYA350E9dPUiXiMNeReqICk"
-twitter_token: "13079512-XzR0g4ZM0yMrFduQJWWpEnwS6F9OkjeE2wQENHVJb"
-twitter_token_secret: "EiG96UHhzY7JXrBknDFDY1GI1AHpixQCgdW1mRIcZtUK5"
-
-
-
 # we are running a JSON REST API 
 # responses to users will serialize in json format
 serializer: JSON
-
-# The default layout to use for your application (located in
-# views/layouts/main.tt)
-layout: undef
 
 # when the charset is set to UTF-8 Dancer2 will handle for you
 # all the magic of encoding and decoding. You should not care
 # about unicode within your app when this setting is set (recommended).
 charset: "UTF-8"
 
+# no default views in this app
+layout: undef

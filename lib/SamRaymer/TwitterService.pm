@@ -93,14 +93,14 @@ sub get_user_array_from_id_array {
 }
 
 sub get_twitter {
-  my $nt = Net::Twitter->new(
-    traits   => [qw/API::RESTv1_1/, 'OAuth'],
+    my $nt = Net::Twitter->new(
+        traits   => [qw/API::RESTv1_1/, 'OAuth'],
 
-    consumer_key        => config->{'twitter_consumer_key'},
-    consumer_secret     => config->{'twitter_consumer_secret'},
-    access_token        => config->{'twitter_token'},
-    access_token_secret => config->{'twitter_token_secret'},
-  );
+        consumer_key        => @ENV{TWITTER_CONSUMER_KEY},
+        consumer_secret     => @ENV{TWITTER_CONSUMER_SECRET},
+        access_token        => @ENV{TWITTER_TOKEN},
+        access_token_secret => @ENV{TWITTER_TOKEN_SECRET},
+    );
     
 }
 
