@@ -1,0 +1,25 @@
+# configuration file for production environment
+
+# Define in environment variables for prod:
+# twitter_consumer_key:
+# twitter_consumer_secret:
+# twitter_token:
+# twitter_token_secret:
+
+
+
+
+# only log warning and error messsages
+log: "warning"
+
+# log message to a file in logs/
+logger: "file"
+
+# don't consider warnings critical
+warnings: 0
+
+# hide errors
+show_errors: 0
+
+# disable server tokens in production environments
+no_server_tokens: 1
