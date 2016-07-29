@@ -16,7 +16,7 @@ Returns recent tweets and common friends!
 
 * May only be performed 7 times in total per 15 minute window due to twitter rate-limiting
 * Returns the intersection of followed users, given the `name1` and `name2` parameters above.
-* Users are returned
+* Users are returned as an array of Twitter "user" JSON objects (see https://dev.twitter.com/overview/api/users )
 
 ### Sample response json
 (large amounts of tweet json replaced with ellipses by author):
