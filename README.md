@@ -6,13 +6,15 @@ Returns recent tweets and common friends!
 ## API Doc
 ### Recent statuses
 `/statuses/recent/{screen_name}`
+
 * May only be performed 15 times in total per 15 minute window due to twitter rate-limiting
 * Returns up to 30 tweets from a given user's timeline (configurable on server via `recent_tweet_count` in `config.yml`)
 * Tweets are returned as an array of Twitter "status" JSON objects (see https://dev.twitter.com/overview/api/tweets )
 
 ### Common follows
-* May only be performed 7 times in total per 15 minute window due to twitter rate-limiting
 `/common-follows?name1={screen_name}&name2={different_name}`
+
+* May only be performed 7 times in total per 15 minute window due to twitter rate-limiting
 * Returns the intersection of followed users, given the `name1` and `name2` parameters above.
 * Users are returned
 
