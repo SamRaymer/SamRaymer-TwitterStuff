@@ -8,10 +8,11 @@ recent_tweet_count: 30
 #per the twitter API
 max_user_id_count: 5000
 
-twitter_consumer_key: "YOUR_CONSUMER_KEY"
-twitter_consumer_secret: "YOUR_CONSUMER_SECRET_KEY"
-twitter_token: "YOUR_TOKEN"
-twitter_token_secret: "YOUR_SECRET_TOKEN"
+twitter_consumer_key: "lmhaYtFemhQ1vFXqBraNX2ftQ"
+twitter_consumer_secret: "y1atUKzBk84n9MI9SSlZvqi2ltwVYA350E9dPUiXiMNeReqICk"
+twitter_token: "13079512-XzR0g4ZM0yMrFduQJWWpEnwS6F9OkjeE2wQENHVJb"
+twitter_token_secret: "EiG96UHhzY7JXrBknDFDY1GI1AHpixQCgdW1mRIcZtUK5"
+
 
 
 # we are running a JSON REST API 
