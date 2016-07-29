@@ -37,6 +37,8 @@ Returns recent tweets and common friends!
     * TWITTER_CONSUMER_SECRET
     * TWITTER_TOKEN
     * TWITTER_TOKEN_SECRET
+* **If testing**
+    * Ensure you've set the config variables above in your runtime environment (for functional tests against twitter) and run `prove -l` in the project folder
 * **If running locally** and not in Heroku, 
     * Make sure that you have all necessary packages installed by navigating to the dir and running `cpanminus . --installdeps` 
         * cpanm installation instructions available at http://cpanmin.us
