@@ -51,3 +51,4 @@ Returns recent tweets and common friends!
     * Run `plackup bin/app.pgsi` to start
 * **If running on heroku** the Procfile should automatically ensure all packages are installed and start the service.
     * Make sure the environment variables above have been set using heroku config vars https://devcenter.heroku.com/articles/config-vars
+    * [jul 30] Make sure to use the buildpack `https://github.com/kazeburo/heroku-buildpack-perl-procfile.git` in your heroku app settings
